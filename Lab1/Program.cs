@@ -10,35 +10,42 @@ namespace Lab1
     {
         static void Main(string[] args)
         {
-            try
+            Console.WriteLine("Enter how many records?");
+            int numRecord = Convert.ToInt16(Console.ReadLine());
+
+            for (int i = 0; i < numRecord; i++)
             {
-                string Name = "";
-                int Age = 0;
-
-                Console.WriteLine("Enter Name: ");
-                Name = Console.ReadLine();
-                if(Name.Length == 0)
+                try
                 {
-                    Console.WriteLine("Name is required");
-                    Console.Read();
-                    return;
-                }
+                    string Name = "";
+                    int Age = 0;
 
-                Console.WriteLine("Enter Age: ");
-                Age = Convert.ToInt16(Console.ReadLine());
-                if(Age > 100)
+                    Console.WriteLine("Enter Name: ");
+                    Name = Console.ReadLine();
+                    if (Name.Length == 0)
+                    {
+                        Console.WriteLine("Name is required");
+                        Console.Read();
+                        return;
+                    }
+
+                    Console.WriteLine("Enter Age: ");
+                    Age = Convert.ToInt16(Console.ReadLine());
+                    if (Age > 100)
+                    {
+                        Console.WriteLine("Invalid Age");
+                        Console.Read();
+                        return;
+                    }
+
+                    Console.WriteLine("Hello " + Name + " " + Age);
+                    Console.Read();
+                }
+                catch (Exception e)
                 {
-                    Console.WriteLine("Invalid Age");
-                    Console.Read();
-                    return;
+                    Console.WriteLine("Please try ....invalid data");
                 }
-
-                Console.WriteLine("Hello " + Name + " " + Age);
-                Console.Read();               
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine("Please try ....invalid data");
+                Console.ReadLine();
             }
         }
     }
