@@ -17,11 +17,24 @@ namespace Lab1
 
                 Console.WriteLine("Enter Name: ");
                 Name = Console.ReadLine();
+                if(Name.Length == 0)
+                {
+                    Console.WriteLine("Name is required");
+                    Console.Read();
+                    return;
+                }
+
                 Console.WriteLine("Enter Age: ");
                 Age = Convert.ToInt16(Console.ReadLine());
+                if(Age > 100)
+                {
+                    Console.WriteLine("Invalid Age");
+                    Console.Read();
+                    return;
+                }
 
                 Console.WriteLine("Hello " + Name + " " + Age);
-                Console.Read();
+                Console.Read();               
             }
             catch(Exception e)
             {
