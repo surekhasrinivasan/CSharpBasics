@@ -18,6 +18,7 @@ class Program
 
         //using placeholders 
         Console.WriteLine("I am taking my first {0}{1}{2} and I am really happy with what I am learning.", firstString, freeSpace, secondString);
+
         Thread.Sleep(3000);
     }
 }
