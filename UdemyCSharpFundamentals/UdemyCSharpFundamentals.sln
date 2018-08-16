@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTypes", "DataTypes\Data
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integers", "Integers\Integers.csproj", "{1FAC2423-1321-47A6-B9E4-3D367D057CE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strings", "Strings\Strings.csproj", "{FEE93266-94E5-4EA3-92E1-F9AA2C8302A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1FAC2423-1321-47A6-B9E4-3D367D057CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FAC2423-1321-47A6-B9E4-3D367D057CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FAC2423-1321-47A6-B9E4-3D367D057CE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEE93266-94E5-4EA3-92E1-F9AA2C8302A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEE93266-94E5-4EA3-92E1-F9AA2C8302A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEE93266-94E5-4EA3-92E1-F9AA2C8302A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEE93266-94E5-4EA3-92E1-F9AA2C8302A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
