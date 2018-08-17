@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArithmeticOperators", "ArithmeticOperators\ArithmeticOperators.csproj", "{A8E10255-F3CB-4B88-8348-C25DC95777AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicalOperators", "LogicalOperators\LogicalOperators.csproj", "{5D253C46-786C-478D-BC96-70D955D49B77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8E10255-F3CB-4B88-8348-C25DC95777AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8E10255-F3CB-4B88-8348-C25DC95777AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8E10255-F3CB-4B88-8348-C25DC95777AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8E10255-F3CB-4B88-8348-C25DC95777AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D253C46-786C-478D-BC96-70D955D49B77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D253C46-786C-478D-BC96-70D955D49B77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D253C46-786C-478D-BC96-70D955D49B77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D253C46-786C-478D-BC96-70D955D49B77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1FE0467C-DEE7-417E-ADBC-2723087B6658}
+	EndGlobalSection
+EndGlobal
