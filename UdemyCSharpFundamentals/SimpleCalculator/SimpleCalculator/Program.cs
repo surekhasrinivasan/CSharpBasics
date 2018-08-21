@@ -20,7 +20,11 @@ namespace SimpleCalculator
 
             int difference = firstNumber - secondNumber;
 
-            Console.WriteLine("{0} - {1} = {2}", firstNumber, secondNumber, difference);            
+            Console.WriteLine("{0} - {1} = {2}", firstNumber, secondNumber, difference);
+
+            int product = firstNumber * secondNumber;
+
+            Console.WriteLine("{0} * {1} = {2}", firstNumber, secondNumber, product);
         }
     }
 }
