@@ -17,6 +17,10 @@ namespace SimpleCalculator
             int answer = firstNumber + secondNumber;
 
             Console.WriteLine("{0} + {1} = {2}", firstNumber, secondNumber, answer);
+
+            int difference = firstNumber - secondNumber;
+
+            Console.WriteLine("{0} - {1} = {2}", firstNumber, secondNumber, difference);            
         }
     }
 }
