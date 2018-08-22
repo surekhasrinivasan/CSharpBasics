@@ -4,7 +4,8 @@ namespace SimpleCalculator
 {
     class Program
     {
-        //Simple Calculator - Reads two integers from the user and adds them together. Prints the result on console. 
+        //Simple Calculator - Reads two integers from the user, does addition, subtraction,multiplication and Division operation. 
+        //Prints the result on console. 
 
         static void Main()
         {
@@ -14,20 +15,24 @@ namespace SimpleCalculator
             Console.WriteLine("Please enter second number: ");
             int secondNumber = int.Parse(Console.ReadLine());
 
-            int answer = firstNumber + secondNumber;
+            // Calculates the sum of two integers
 
+            int answer = firstNumber + secondNumber;
             Console.WriteLine("{0} + {1} = {2}", firstNumber, secondNumber, answer);
 
-            int difference = firstNumber - secondNumber;
+            //Calculates the difference between firstNumber and secondNumber
 
+            int difference = firstNumber - secondNumber;
             Console.WriteLine("{0} - {1} = {2}", firstNumber, secondNumber, difference);
 
-            int product = firstNumber * secondNumber;
+            //Calulates the product of two integers
 
+            int product = firstNumber * secondNumber;
             Console.WriteLine("{0} * {1} = {2}", firstNumber, secondNumber, product);
 
-            int result = firstNumber / secondNumber;
+            //Calculates the result of dividing two integers
 
+            int result = firstNumber / secondNumber;
             Console.WriteLine("{0} / {1} = {2}", firstNumber, secondNumber, result);
         }
     }
