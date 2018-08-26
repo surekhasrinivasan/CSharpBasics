@@ -30,7 +30,11 @@ namespace ArraysExample2
                 Console.WriteLine("Enter student #{0} grade", i + 1);
                 double grade = double.Parse(Console.ReadLine());
                 grades[i] = grade;
-                averageGrade += grade;                
+                averageGrade += grade;
+                if(grade > highestGrade)
+                {
+                    highestGrade = grade;
+                }
             }
 
             //all the below 3 syntax mean the same
@@ -38,6 +42,7 @@ namespace ArraysExample2
             //averageGrade = averageGrade / amountOfStudents;
             averageGrade /= amountOfStudents;
             Console.WriteLine("The average grade of the class is {0}", averageGrade);
+            Console.WriteLine("The highest grade of the class is {0}", highestGrade);
         }
     }
 }
