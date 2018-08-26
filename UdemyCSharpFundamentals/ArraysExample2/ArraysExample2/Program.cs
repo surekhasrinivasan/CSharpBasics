@@ -19,6 +19,7 @@ namespace ArraysExample2
 
             double averageGrade = 0;
             double highestGrade = 0;
+            string highestGradeName = "";
             
             string[] studentNames = new string[amountOfStudents];
             double[] grades = new double[amountOfStudents];
@@ -34,6 +35,7 @@ namespace ArraysExample2
                 if(grade > highestGrade)
                 {
                     highestGrade = grade;
+                    highestGradeName = name;
                 }
             }
 
@@ -42,7 +44,7 @@ namespace ArraysExample2
             //averageGrade = averageGrade / amountOfStudents;
             averageGrade /= amountOfStudents;
             Console.WriteLine("The average grade of the class is {0}", averageGrade);
-            Console.WriteLine("The highest grade of the class is {0}", highestGrade);
+            Console.WriteLine("The highest grade of the class is {0} and their name is {1}", highestGrade, highestGradeName);
         }
     }
 }
