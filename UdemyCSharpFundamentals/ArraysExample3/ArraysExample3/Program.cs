@@ -40,7 +40,39 @@ namespace ArraysExample3
             {
                 hiddenWord += "*";
             }
-            Console.WriteLine(hiddenWord);
+            //Console.WriteLine(hiddenWord);
+
+            //Guessing stuff
+            while (hiddenWord.Contains("*"))
+            {
+                Console.WriteLine("Word {0}:", hiddenWord);
+                Console.WriteLine("Guess a letter >> ");
+                char letter = char.Parse(Console.ReadLine());
+                bool containsLetter = false;
+                for(int i = 0; i < selectedWord.Length; i++)
+                {
+                    if (selectedWord[i] == letter)
+                    {
+                        hiddenWord = hiddenWord.Remove(i, 1);//jump //j***
+                        hiddenWord = hiddenWord.Insert(i, letter.ToString());
+                        containsLetter = true;
+                    }
+                    if(containsLetter == true)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("Yes! {0} is in the word", letter);
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Sorry, {0} is not in the word", letter);
+                    }
+                    Console.ResetColor();
+                }
+
+                //you won
+                Console.WriteLine("Congratulations! You win! The word was {0}", selectedWord);
+            }
         }
     }
 }
