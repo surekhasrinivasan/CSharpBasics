@@ -24,8 +24,16 @@ namespace ArrayMethods
             //}
 
             //Sorting an array 
+            //int[] myArray = { 13, 17, 10, 5, 7, 2, 55 };
+            //Array.Sort(myArray);
+            //for(int i = 0; i < myArray.Length; i++)
+            //{
+            //    Console.WriteLine(myArray[i]);
+            //}
+
+            //Reverse an array
             int[] myArray = { 13, 17, 10, 5, 7, 2, 55 };
-            Array.Sort(myArray);
+            Array.Reverse(myArray);
             for(int i = 0; i < myArray.Length; i++)
             {
                 Console.WriteLine(myArray[i]);
