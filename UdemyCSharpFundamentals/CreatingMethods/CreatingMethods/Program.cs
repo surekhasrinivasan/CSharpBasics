@@ -11,8 +11,8 @@ namespace CreatingMethods
         static void Main(string[] args)
         {
             DisplayMessage();
-            Add(10, 34);
-            Add(300, 34);
+            int answer = Add(100, 34);
+            Console.WriteLine(answer);
         }
 
         //access modifiers public private, static, return type, methodname(parameters)
@@ -22,10 +22,11 @@ namespace CreatingMethods
         }
 
         //Adding two numbers 
-        public static void Add(int num1, int num2)
+        public static int Add(int num1, int num2)
         {
             int answer = num1 + num2;
-            Console.WriteLine(answer);
+            //Console.WriteLine(answer);
+            return answer;
         }
     }
 }
