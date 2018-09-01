@@ -13,12 +13,13 @@ namespace RefKeyword
         static void Main(string[] args)
         {
             int studentGrade = 75;
-            GiveExtraCredit(studentGrade);
+            GiveExtraCredit(ref studentGrade);
             Console.WriteLine(studentGrade);
         }
-
-        public static void GiveExtraCredit(int studentGrade)
+        
+        public static void GiveExtraCredit(ref int studentGrade)
         {
             studentGrade += 3;
         }
+    }
 }
