@@ -14,6 +14,7 @@ namespace MethodOverloading
         {
             Add(5, 6);
             Add("Hello", "World");
+            Add(4.7, 8.6);
         }
 
         //Add method with integer data type parameters 
@@ -27,6 +28,13 @@ namespace MethodOverloading
         public static void Add(string x, string y)
         {
             string answer = x + " " + y;
+            Console.WriteLine(answer);
+        }
+
+        //Add method with double data type parameters
+        public static void Add(double x, double y)
+        {
+            double answer = x + y;
             Console.WriteLine(answer);
         }
     }
