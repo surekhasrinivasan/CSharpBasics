@@ -29,7 +29,7 @@ namespace MethodsExercise1
             for (int i = 2; i < 11; i++)
             {
                 int answer = number * i;
-                Console.WriteLine("{0} * {1} = {2}", i, number, answer);
+                Console.WriteLine("{0, 2} * {1, 2} = {2, 2}", i, number, answer);
             }
         }
     }
