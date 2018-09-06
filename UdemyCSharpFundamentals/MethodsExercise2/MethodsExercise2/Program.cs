@@ -19,7 +19,17 @@ namespace MethodsExercise2
          * */
         static void Main(string[] args)
         {
+            Console.WriteLine("Enter a number: ");
+            int number = int.Parse(Console.ReadLine());
 
+            int squared = Square(number);
+            Console.WriteLine("The square of {0} is: {1}", number, squared);
         }
+
+        public static int Square(int number)
+        {
+            int answer = number * number;
+            return answer;
+        }        
     }
 }
