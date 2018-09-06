@@ -19,7 +19,18 @@ namespace MethodsExercise1
 
         static void Main(string[] args)
         {
+            Console.WriteLine("Enter a number: ");
+            int number = int.Parse(Console.ReadLine());
+            MultiplicationTable(number);
+        }
 
+        public static void MultiplicationTable(int number)
+        {
+            for (int i = 2; i < 11; i++)
+            {
+                int answer = number * i;
+                Console.WriteLine("{0} * {1} = {2}", i, number, answer);
+            }
         }
     }
 }
