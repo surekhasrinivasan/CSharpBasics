@@ -24,12 +24,22 @@ namespace MethodsExercise2
 
             int squared = Square(number);
             Console.WriteLine("The square of {0} is: {1}", number, squared);
+
+            int cubed = Cube(number);
+            Console.WriteLine("The cube of {0} is: {1}", number, cubed);
         }
 
         public static int Square(int number)
         {
             int answer = number * number;
             return answer;
-        }        
+        }
+
+        //The Cube method calling Square method
+        public static int Cube(int number)
+        {
+            int answer = Square(number) * number;
+            return answer;
+        }
     }
 }
