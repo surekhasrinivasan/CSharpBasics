@@ -8,5 +8,9 @@ namespace CreatingAClass
 {
     class Student
     {
+        public string Name;
+        public int Age;
+        public double FinalGrade;
+
     }
 }
