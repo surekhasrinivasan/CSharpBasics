@@ -25,6 +25,15 @@ namespace CreatingAClass
             this.finalGrade = finalGrade;
         }
 
+        
+        //constructor overloading 
+        public Student(string name, int age) : this(name,age, 0)
+        {
+            //code duplication so we can use constructor initializer (i.e., call another constructor in this constructor)
+            //this.name = name;
+            //this.age = age;
+        }
+
         public void SayHello()
         {
             Console.WriteLine("Hello from {0}", name);

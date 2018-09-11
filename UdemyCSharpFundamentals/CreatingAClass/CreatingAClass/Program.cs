@@ -18,7 +18,10 @@ namespace CreatingAClass
             s2.SayHello();
 
             Student s3 = new Student("Ted", 12, 75);
-            s3.SayHello();            
+            s3.SayHello();
+
+            Student s4 = new Student("Frank", 10);
+            s4.SayHello();
         }
     }
 }
