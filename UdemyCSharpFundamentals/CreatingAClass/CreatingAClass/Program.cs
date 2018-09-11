@@ -11,26 +11,14 @@ namespace CreatingAClass
         static void Main(string[] args)
         {
             //new - means instantiating the class
-
-            Student s1 = new Student();
-            s1.Name = "Bob";
-            s1.Age = 15;
-            s1.FinalGrade = 65;
+            Student s1 = new Student("Tom", 15, 75);
             s1.SayHello();
 
-            Student s2 = new Student();
-            s2.Name = "Frank";
-            s2.Age = 12;
-            s2.FinalGrade = 90;
+            Student s2 = new Student("Fred", 15, 90);
             s2.SayHello();
 
-            Student s3 = new Student();
-            s3.Name = "Ted";
-            s3.Age = 15;
-            s3.FinalGrade = 95;
-            s3.SayHello();
-
-            //Console.WriteLine(s1.Name);
+            Student s3 = new Student("Ted", 12, 75);
+            s3.SayHello();            
         }
     }
 }
