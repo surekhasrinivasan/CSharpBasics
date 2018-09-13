@@ -50,5 +50,13 @@ namespace CreatingAClass
                 return "The student is too young";
             }
         }
+
+        public void SetName(string newName)
+        {
+            if(newName != "")
+            {
+                name = newName;
+            }
+        }
     }
 }
