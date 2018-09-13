@@ -8,6 +8,7 @@ namespace CreatingAClass
 {
     class Student
     {
+        //The idea of oop always enforces that you should make your data private that allows us to protect our class. 
         private string name;
         private int age;
         private double finalGrade;
@@ -77,6 +78,24 @@ namespace CreatingAClass
             {
                 age = newAge;
             }
+        }
+
+        public double GetFinalGrade()
+        {
+            return finalGrade;
+        }
+
+        public void SetFinalGrade(double newFinalGrade)
+        {
+            if(newFinalGrade < 65)
+            {
+                newFinalGrade = 65;
+            }
+            else if(newFinalGrade > 100)
+            {
+                newFinalGrade = 100;
+            }
+            finalGrade = newFinalGrade;
         }
     }
 }
