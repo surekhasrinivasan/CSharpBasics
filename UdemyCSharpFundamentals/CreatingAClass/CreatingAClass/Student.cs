@@ -38,5 +38,17 @@ namespace CreatingAClass
         {
             Console.WriteLine("Hello from {0}", name);
         }
+
+        public string GetName()
+        {
+            if(age >= 18)
+            {
+                return name;
+            }
+            else
+            {
+                return "The student is too young";
+            }
+        }
     }
 }
