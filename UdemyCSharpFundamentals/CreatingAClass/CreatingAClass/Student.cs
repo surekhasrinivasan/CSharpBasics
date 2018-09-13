@@ -58,5 +58,25 @@ namespace CreatingAClass
                 name = newName;
             }
         }
+
+        public int GetAge()
+        {
+            if(age >= 18)
+            {
+                return age;
+            }
+            else
+            {
+                return -1;
+            }
+        }
+
+        public void SetAge(int newAge)
+        {
+            if(newAge != 0)
+            {
+                age = newAge;
+            }
+        }
     }
 }
