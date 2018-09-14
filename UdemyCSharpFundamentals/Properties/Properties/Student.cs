@@ -79,43 +79,86 @@ namespace Properties
         //    }
         //}
 
-        public int GetAge()
+        //Age property
+        public int Age
         {
-            if (age >= 18)
+            get
             {
-                return age;
+                if (age >= 18)
+                {
+                    return age;
+                }
+                else
+                {
+                    return -1;
+                }
             }
-            else
+            set
             {
-                return -1;
+                if (value != 0)
+                {
+                    age = value;
+                }
             }
         }
 
-        public void SetAge(int newAge)
+        //public int GetAge()
+        //{
+        //    if (age >= 18)
+        //    {
+        //        return age;
+        //    }
+        //    else
+        //    {
+        //        return -1;
+        //    }
+        //}
+
+        //public void SetAge(int newAge)
+        //{
+        //    if (newAge != 0)
+        //    {
+        //        age = newAge;
+        //    }
+        //}
+
+        //FinalGrade property
+        public double FinalGrade
         {
-            if (newAge != 0)
+            get
             {
-                age = newAge;
+                return finalGrade;
+            }
+            set
+            {
+                if (value < 65)
+                {
+                    value = 65;
+                }
+                else if (value > 100)
+                {
+                    value = 100;
+                }
+                finalGrade = value;
             }
         }
+        
+        //public double GetFinalGrade()
+        //{
+        //    return finalGrade;
+        //}
 
-        public double GetFinalGrade()
-        {
-            return finalGrade;
-        }
-
-        public void SetFinalGrade(double newFinalGrade)
-        {
-            if (newFinalGrade < 65)
-            {
-                newFinalGrade = 65;
-            }
-            else if (newFinalGrade > 100)
-            {
-                newFinalGrade = 100;
-            }
-            finalGrade = newFinalGrade;
-        }
-
+        //public void SetFinalGrade(double newFinalGrade)
+        //{
+        //    if (newFinalGrade < 65)
+        //    {
+        //        newFinalGrade = 65;
+        //    }
+        //    else if (newFinalGrade > 100)
+        //    {
+        //        newFinalGrade = 100;
+        //    }
+        //    finalGrade = newFinalGrade;
+        //}
     }
 }
