@@ -17,9 +17,11 @@ namespace Properties
             s1.Name = "Bob";
             // Console.WriteLine(s1.GetName());
             Console.WriteLine(s1.Name);
-            s1.SetFinalGrade(105);
-            Console.WriteLine(s1.GetFinalGrade());
 
+            //s1.SetFinalGrade(105);
+            //Console.WriteLine(s1.GetFinalGrade());
+            s1.FinalGrade = 105;
+            Console.WriteLine(s1.FinalGrade);
         }
     }
 }
