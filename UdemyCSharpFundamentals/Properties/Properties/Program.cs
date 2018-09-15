@@ -11,10 +11,10 @@ namespace Properties
         static void Main(string[] args)
         {
             //new - means instantiating the class
-            Student s1 = new Student("Tom", 19, 75);
+            Student s1 = new Student("Tom", "Bob", 19, 75);
             //s1.SetName("");
             //property is just a syntax, it gets coverted to a function call at the end.
-            s1.Name = "Bob";
+            s1.Name = "";
             // Console.WriteLine(s1.GetName());
             Console.WriteLine(s1.Name);
 
@@ -22,6 +22,7 @@ namespace Properties
             //Console.WriteLine(s1.GetFinalGrade());
             s1.FinalGrade = 105;
             Console.WriteLine(s1.FinalGrade);
+            Console.WriteLine(s1.LastName);
         }
     }
 }

@@ -11,17 +11,20 @@ namespace Properties
         private string name;
         private int age;
         private double finalGrade;
+        //Auto-Implemented Property
+        public string LastName { get; private set; }
 
-        public Student(string name, int age, double finalGrade)
+        public Student(string name, string lastName, int age, double finalGrade)
         {
             this.name = name;
+            this.LastName = lastName;
             this.age = age;
             this.finalGrade = finalGrade;
         }
 
 
         //constructor overloading 
-        public Student(string name, int age) : this(name, age, 0)
+        public Student(string name, string lastName, int age) : this(name, lastName, age, 0)
         {
             
         }
