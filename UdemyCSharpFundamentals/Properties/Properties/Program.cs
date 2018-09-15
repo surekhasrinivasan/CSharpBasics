@@ -8,6 +8,10 @@ namespace Properties
 {
     class Program
     {
+        //A property is just a shorthand for get and set functions that is specific to c-sharp. 
+        //It makes it a little easier for the user of your class to set the data ad get the data 
+        //because they can treat it as a normal variable. 
+
         static void Main(string[] args)
         {
             //new - means instantiating the class
